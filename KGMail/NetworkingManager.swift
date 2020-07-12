@@ -22,12 +22,14 @@ class NetworkingManager {
                 completion([$0])
             }
         } else {
-            // LOAD MESSAGES FOR LABELS QUESTION
-            //
-            // This implementation is incomplete.
-            // Using the array of labels and the internalGetMessages function below, make requests to get all messages that have at least one of the labels in the array.
-            // If the array is empty, make one request to get messages with no labels.
-            completion([[]])
+			var allEmails = [[Email]]()
+			for label in labels {
+				internalGetMessages(label: label) { emails in
+					allEmails.append(emails)
+				}
+			}
+
+            completion(allEmails)
         }
     }
 
