@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1656B2FC24BB782700C6569B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1656B2FB24BB782600C6569B /* README.md */; };
 		A725BCDA2225D5DF004E3F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725BCD92225D5DF004E3F7F /* AppDelegate.swift */; };
 		A725BCDC2225D5DF004E3F7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725BCDB2225D5DF004E3F7F /* LoginViewController.swift */; };
 		A725BCDF2225D5DF004E3F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A725BCDD2225D5DF004E3F7F /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		079DC2E9306789A2A58CF856 /* Pods_KGMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KGMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1656B2FB24BB782600C6569B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		79F752FC21957BF5CB905AD3 /* Pods-KGMail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGMail.debug.xcconfig"; path = "Target Support Files/Pods-KGMail/Pods-KGMail.debug.xcconfig"; sourceTree = "<group>"; };
 		A725BCD62225D5DF004E3F7F /* KGMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A725BCD92225D5DF004E3F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		A725BCCD2225D5DF004E3F7F = {
 			isa = PBXGroup;
 			children = (
+				1656B2FB24BB782600C6569B /* README.md */,
 				A725BCD82225D5DF004E3F7F /* KGMail */,
 				A7F7079A2230419A0013B41A /* KGMailTests */,
 				A725BCD72225D5DF004E3F7F /* Products */,
@@ -300,6 +303,7 @@
 			files = (
 				A725BCE42225D5E1004E3F7F /* LaunchScreen.storyboard in Resources */,
 				A725BCE12225D5E1004E3F7F /* Assets.xcassets in Resources */,
+				1656B2FC24BB782700C6569B /* README.md in Resources */,
 				A781C1C2222749BD00971FDF /* Labels.storyboard in Resources */,
 				A725BCDF2225D5DF004E3F7F /* Main.storyboard in Resources */,
 			);
