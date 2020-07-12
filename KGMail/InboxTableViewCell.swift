@@ -12,8 +12,6 @@ class InboxTableViewCell: UITableViewCell {
 	}
 
     // CUSTOM INBOX CELL QUESTION
-    //
-    // This implementation is incomplete.
     // Use best practices to update the layout and design of the InboxTableViewCell to match the design provided
     // The design should include:
     //      - sender

@@ -66,9 +66,6 @@ class InboxViewModel {
 
     var currentCheckboxState: CheckboxState {
         // CHECKBOX QUESTION
-        //
-        // This implementation is incomplete.
-        // Add some logic here to get the current state of the checkbox.
         //      - When no messages are selected, the checkbox should be unchecked. Clicking it sets all the visible messages to their selected state.
         //      - When only some messages are selected, it should be in the intermediate state. Clicking it will deselect all selected messages.
         //      - When all messages are selected, the checkbox should be checked. Clicking it will deselect all messages.
