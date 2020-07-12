@@ -36,16 +36,20 @@ class LabelSelectionViewModel: LabelsViewModel {
 
                 // MESSAGES COUNT QUESTION
                 //
-                // This implementation is incomplete.
                 // Write logic to determine the number of messages associated to each label:
                 //      - Message count for each label should be based on the messages with that label in currently loaded page of messages
                 //      - When a label is selected, the message count should update to display the associated counts for the messages returned for the selected label(s)
                 //      - Any selected state for messages should be reset when the visible label is chosen
+
+				let numberOfMessages = self.currentVisibleEmails.reduce(0) { (sum, emailModel) -> Int in
+					return sum + (emailModel.labelIDs.contains(label.id) ? 1 : 0)
+				}
+
                 return LabelViewModel(name: label.name,
                                       id: label.id,
                                       isSelected: shouldBeSelected,
                                       type: label.type,
-                                      numberOfMessages: nil)
+                                      numberOfMessages: numberOfMessages)
             }
             completion()
         }
