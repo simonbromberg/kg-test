@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="KGMail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-xn-HkS" customClass="GIDSignInButton">
+                                <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Vgw-3l-Juv"/>
+                                    <constraint firstAttribute="height" constant="50" id="qbF-Uw-STP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p0F-xn-HkS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLi-bX-mxX"/>
+                            <constraint firstItem="p0F-xn-HkS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ezN-Mh-gvO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="DNt-NA-4Tf" kind="presentation" identifier="signInSuccess" id="lg6-0c-0p0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="125"/>
+        </scene>
+        <!--Inbox-->
+        <scene sceneID="aGZ-cA-rS9">
+            <objects>
+                <viewController id="N6c-Ix-bO0" customClass="InboxViewController" customModule="KGMail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r23-By-FS2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w5c-3Z-ofV">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="emailCell" textLabel="jSz-2o-RwM" rowHeight="45" style="IBUITableViewCellStyleDefault" id="QjC-r7-Mis" customClass="InboxTableViewCell" customModule="KGMail" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QjC-r7-Mis" id="4LC-wP-BZf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jSz-2o-RwM">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="44.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="N6c-Ix-bO0" id="qxS-RF-zr2"/>
+                                    <outlet property="delegate" destination="N6c-Ix-bO0" id="Tz5-t7-NLj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w5c-3Z-ofV" firstAttribute="top" secondItem="eOE-qm-5eu" secondAttribute="top" id="2LC-Ha-F93"/>
+                            <constraint firstItem="eOE-qm-5eu" firstAttribute="bottom" secondItem="w5c-3Z-ofV" secondAttribute="bottom" id="Snl-wh-BfX"/>
+                            <constraint firstItem="eOE-qm-5eu" firstAttribute="trailing" secondItem="w5c-3Z-ofV" secondAttribute="trailing" id="wEg-yf-Mom"/>
+                            <constraint firstItem="w5c-3Z-ofV" firstAttribute="leading" secondItem="eOE-qm-5eu" secondAttribute="leading" id="xQi-ZQ-qpG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eOE-qm-5eu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Inbox" id="cDa-6V-5Eb">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Edit Labels" id="XD0-9w-sHi">
+                            <connections>
+                                <segue destination="otn-cw-g8y" kind="presentation" identifier="editLabelsSegue" id="aFe-jA-Bxk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="Y2A-kb-T5p">
+                            <connections>
+                                <segue destination="i8X-Qw-3ot" kind="presentation" identifier="showLabelSelectionSegue" id="TpO-1J-Nor"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editLabelsButton" destination="XD0-9w-sHi" id="fsK-6t-nOy"/>
+                        <outlet property="filterButton" destination="Y2A-kb-T5p" id="Snx-13-4Kx"/>
+                        <outlet property="tableView" destination="w5c-3Z-ofV" id="r1S-Zg-Ziq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJh-pO-2Gj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1540" y="124.58770614692655"/>
+        </scene>
+        <!--Labels-->
+        <scene sceneID="pEO-Zd-Aar">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Labels" id="i8X-Qw-3ot" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wv0-bO-IBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="99"/>
+        </scene>
+        <!--Labels-->
+        <scene sceneID="1sn-2f-jfq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Labels" id="otn-cw-g8y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ev2-Wx-pVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="271"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MHQ-7h-fIP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DNt-NA-4Tf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Gl3-mw-b4F">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N6c-Ix-bO0" kind="relationship" relationship="rootViewController" id="YGR-un-dgQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebi-Ui-4xB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600.79999999999995" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>

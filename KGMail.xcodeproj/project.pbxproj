@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A725BCDA2225D5DF004E3F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725BCD92225D5DF004E3F7F /* AppDelegate.swift */; };
+		A725BCDC2225D5DF004E3F7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725BCDB2225D5DF004E3F7F /* LoginViewController.swift */; };
+		A725BCDF2225D5DF004E3F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A725BCDD2225D5DF004E3F7F /* Main.storyboard */; };
+		A725BCE12225D5E1004E3F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A725BCE02225D5E1004E3F7F /* Assets.xcassets */; };
+		A725BCE42225D5E1004E3F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A725BCE22225D5E1004E3F7F /* LaunchScreen.storyboard */; };
+		A781C1AD2225F1ED00971FDF /* GmailScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1AC2225F1ED00971FDF /* GmailScopes.swift */; };
+		A781C1AF2226D69E00971FDF /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1AE2226D69E00971FDF /* InboxViewController.swift */; };
+		A781C1B12226D77800971FDF /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1B02226D77800971FDF /* InboxViewModel.swift */; };
+		A781C1B32226DB7100971FDF /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1B22226DB7100971FDF /* NetworkingManager.swift */; };
+		A781C1B52226EE3500971FDF /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1B42226EE3500971FDF /* Email.swift */; };
+		A781C1B722271F1C00971FDF /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1B622271F1C00971FDF /* InboxTableViewCell.swift */; };
+		A781C1C2222749BD00971FDF /* Labels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A781C1C1222749BD00971FDF /* Labels.storyboard */; };
+		A781C1C422274A9000971FDF /* LabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1C322274A9000971FDF /* LabelsViewController.swift */; };
+		A781C1C722274C3500971FDF /* LabelSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1C622274C3500971FDF /* LabelSelectionViewModel.swift */; };
+		A781C1C9222753A600971FDF /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1C8222753A600971FDF /* LabelTableViewCell.swift */; };
+		A781C1D22229988700971FDF /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1D12229988700971FDF /* Label.swift */; };
+		A781C1D42229CE9200971FDF /* LabelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1D32229CE9200971FDF /* LabelsViewModel.swift */; };
+		A781C1D82229D37C00971FDF /* EditLabelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781C1D72229D37B00971FDF /* EditLabelsViewModel.swift */; };
+		A7AE3541222F161A00BD4D12 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AE3540222F161A00BD4D12 /* Checkbox.swift */; };
+		A7B5A3EF2230659E00FB0C0F /* EmailUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B5A3EE2230659E00FB0C0F /* EmailUtilities.swift */; };
+		A7F7079C2230419A0013B41A /* EmailUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7079B2230419A0013B41A /* EmailUtilitiesTests.swift */; };
+		E94322CA0F06A39A6A86D4C5 /* Pods_KGMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079DC2E9306789A2A58CF856 /* Pods_KGMail.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7F7079E2230419A0013B41A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A725BCCE2225D5DF004E3F7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A725BCD52225D5DF004E3F7F;
+			remoteInfo = KGMail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		079DC2E9306789A2A58CF856 /* Pods_KGMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KGMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F752FC21957BF5CB905AD3 /* Pods-KGMail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGMail.debug.xcconfig"; path = "Target Support Files/Pods-KGMail/Pods-KGMail.debug.xcconfig"; sourceTree = "<group>"; };
+		A725BCD62225D5DF004E3F7F /* KGMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A725BCD92225D5DF004E3F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A725BCDB2225D5DF004E3F7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A725BCDE2225D5DF004E3F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A725BCE02225D5E1004E3F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A725BCE32225D5E1004E3F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A725BCE52225D5E1004E3F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A781C1AC2225F1ED00971FDF /* GmailScopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailScopes.swift; sourceTree = "<group>"; };
+		A781C1AE2226D69E00971FDF /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		A781C1B02226D77800971FDF /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+		A781C1B22226DB7100971FDF /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		A781C1B42226EE3500971FDF /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		A781C1B622271F1C00971FDF /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
+		A781C1C1222749BD00971FDF /* Labels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Labels.storyboard; sourceTree = "<group>"; };
+		A781C1C322274A9000971FDF /* LabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsViewController.swift; sourceTree = "<group>"; };
+		A781C1C622274C3500971FDF /* LabelSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSelectionViewModel.swift; sourceTree = "<group>"; };
+		A781C1C8222753A600971FDF /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		A781C1D12229988700971FDF /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		A781C1D32229CE9200971FDF /* LabelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsViewModel.swift; sourceTree = "<group>"; };
+		A781C1D72229D37B00971FDF /* EditLabelsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLabelsViewModel.swift; sourceTree = "<group>"; };
+		A7AE3540222F161A00BD4D12 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		A7B5A3EE2230659E00FB0C0F /* EmailUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtilities.swift; sourceTree = "<group>"; };
+		A7F707992230419A0013B41A /* KGMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F7079B2230419A0013B41A /* EmailUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtilitiesTests.swift; sourceTree = "<group>"; };
+		A7F7079D2230419A0013B41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E314C05BFF18BD6F4DDE9A98 /* Pods-KGMail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGMail.release.xcconfig"; path = "Target Support Files/Pods-KGMail/Pods-KGMail.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A725BCD32225D5DF004E3F7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E94322CA0F06A39A6A86D4C5 /* Pods_KGMail.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F707962230419A0013B41A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0627A8093C27DD73D944B855 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				079DC2E9306789A2A58CF856 /* Pods_KGMail.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EC037D4EB0A87E658A8DED6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79F752FC21957BF5CB905AD3 /* Pods-KGMail.debug.xcconfig */,
+				E314C05BFF18BD6F4DDE9A98 /* Pods-KGMail.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A725BCCD2225D5DF004E3F7F = {
+			isa = PBXGroup;
+			children = (
+				A725BCD82225D5DF004E3F7F /* KGMail */,
+				A7F7079A2230419A0013B41A /* KGMailTests */,
+				A725BCD72225D5DF004E3F7F /* Products */,
+				2EC037D4EB0A87E658A8DED6 /* Pods */,
+				0627A8093C27DD73D944B855 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A725BCD72225D5DF004E3F7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A725BCD62225D5DF004E3F7F /* KGMail.app */,
+				A7F707992230419A0013B41A /* KGMailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A725BCD82225D5DF004E3F7F /* KGMail */ = {
+			isa = PBXGroup;
+			children = (
+				A725BCD92225D5DF004E3F7F /* AppDelegate.swift */,
+				A725BCDD2225D5DF004E3F7F /* Main.storyboard */,
+				A781C1C0222731B600971FDF /* Login */,
+				A781C1BD2227314500971FDF /* Inbox */,
+				A781C1C522274A9900971FDF /* Labels */,
+				A781C1BE2227318500971FDF /* Networking */,
+				A781C1B922272F2000971FDF /* Resources */,
+			);
+			path = KGMail;
+			sourceTree = "<group>";
+		};
+		A781C1B922272F2000971FDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A725BCE02225D5E1004E3F7F /* Assets.xcassets */,
+				A725BCE22225D5E1004E3F7F /* LaunchScreen.storyboard */,
+				A725BCE52225D5E1004E3F7F /* Info.plist */,
+				A7AE3540222F161A00BD4D12 /* Checkbox.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A781C1BD2227314500971FDF /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				A781C1AE2226D69E00971FDF /* InboxViewController.swift */,
+				A781C1B02226D77800971FDF /* InboxViewModel.swift */,
+				A781C1B622271F1C00971FDF /* InboxTableViewCell.swift */,
+			);
+			name = Inbox;
+			sourceTree = "<group>";
+		};
+		A781C1BE2227318500971FDF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A781C1B22226DB7100971FDF /* NetworkingManager.swift */,
+				A781C1AC2225F1ED00971FDF /* GmailScopes.swift */,
+				A781C1BF2227318D00971FDF /* Models */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A781C1BF2227318D00971FDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A781C1B42226EE3500971FDF /* Email.swift */,
+				A781C1D12229988700971FDF /* Label.swift */,
+				A7B5A3EE2230659E00FB0C0F /* EmailUtilities.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A781C1C0222731B600971FDF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A725BCDB2225D5DF004E3F7F /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A781C1C522274A9900971FDF /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				A781C1C1222749BD00971FDF /* Labels.storyboard */,
+				A781C1C322274A9000971FDF /* LabelsViewController.swift */,
+				A781C1C622274C3500971FDF /* LabelSelectionViewModel.swift */,
+				A781C1C8222753A600971FDF /* LabelTableViewCell.swift */,
+				A781C1D32229CE9200971FDF /* LabelsViewModel.swift */,
+				A781C1D72229D37B00971FDF /* EditLabelsViewModel.swift */,
+			);
+			name = Labels;
+			sourceTree = "<group>";
+		};
+		A7F7079A2230419A0013B41A /* KGMailTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7F7079B2230419A0013B41A /* EmailUtilitiesTests.swift */,
+				A7F7079D2230419A0013B41A /* Info.plist */,
+			);
+			path = KGMailTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A725BCD52225D5DF004E3F7F /* KGMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A725BCE82225D5E1004E3F7F /* Build configuration list for PBXNativeTarget "KGMail" */;
+			buildPhases = (
+				28F7C45320026088E13DAAF2 /* [CP] Check Pods Manifest.lock */,
+				A725BCD22225D5DF004E3F7F /* Sources */,
+				A725BCD32225D5DF004E3F7F /* Frameworks */,
+				A725BCD42225D5DF004E3F7F /* Resources */,
+				77289518674199864EE6DD16 /* [CP] Embed Pods Frameworks */,
+				689B45C9A5CC592D9D2FE141 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGMail;
+			productName = KGMail;
+			productReference = A725BCD62225D5DF004E3F7F /* KGMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7F707982230419A0013B41A /* KGMailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F707A22230419A0013B41A /* Build configuration list for PBXNativeTarget "KGMailTests" */;
+			buildPhases = (
+				A7F707952230419A0013B41A /* Sources */,
+				A7F707962230419A0013B41A /* Frameworks */,
+				A7F707972230419A0013B41A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7F7079F2230419A0013B41A /* PBXTargetDependency */,
+			);
+			name = KGMailTests;
+			productName = KGMailTests;
+			productReference = A7F707992230419A0013B41A /* KGMailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A725BCCE2225D5DF004E3F7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Konrad Group";
+				TargetAttributes = {
+					A725BCD52225D5DF004E3F7F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A7F707982230419A0013B41A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
+						TestTargetID = A725BCD52225D5DF004E3F7F;
+					};
+				};
+			};
+			buildConfigurationList = A725BCD12225D5DF004E3F7F /* Build configuration list for PBXProject "KGMail" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A725BCCD2225D5DF004E3F7F;
+			productRefGroup = A725BCD72225D5DF004E3F7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A725BCD52225D5DF004E3F7F /* KGMail */,
+				A7F707982230419A0013B41A /* KGMailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A725BCD42225D5DF004E3F7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A725BCE42225D5E1004E3F7F /* LaunchScreen.storyboard in Resources */,
+				A725BCE12225D5E1004E3F7F /* Assets.xcassets in Resources */,
+				A781C1C2222749BD00971FDF /* Labels.storyboard in Resources */,
+				A725BCDF2225D5DF004E3F7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F707972230419A0013B41A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28F7C45320026088E13DAAF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KGMail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		689B45C9A5CC592D9D2FE141 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KGMail/Pods-KGMail-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KGMail/Pods-KGMail-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KGMail/Pods-KGMail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77289518674199864EE6DD16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KGMail/Pods-KGMail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KGMail/Pods-KGMail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KGMail/Pods-KGMail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A725BCD22225D5DF004E3F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A725BCDC2225D5DF004E3F7F /* LoginViewController.swift in Sources */,
+				A781C1B52226EE3500971FDF /* Email.swift in Sources */,
+				A725BCDA2225D5DF004E3F7F /* AppDelegate.swift in Sources */,
+				A7B5A3EF2230659E00FB0C0F /* EmailUtilities.swift in Sources */,
+				A781C1D82229D37C00971FDF /* EditLabelsViewModel.swift in Sources */,
+				A781C1B12226D77800971FDF /* InboxViewModel.swift in Sources */,
+				A781C1C722274C3500971FDF /* LabelSelectionViewModel.swift in Sources */,
+				A781C1B32226DB7100971FDF /* NetworkingManager.swift in Sources */,
+				A781C1AD2225F1ED00971FDF /* GmailScopes.swift in Sources */,
+				A781C1B722271F1C00971FDF /* InboxTableViewCell.swift in Sources */,
+				A781C1C9222753A600971FDF /* LabelTableViewCell.swift in Sources */,
+				A781C1C422274A9000971FDF /* LabelsViewController.swift in Sources */,
+				A781C1D22229988700971FDF /* Label.swift in Sources */,
+				A781C1D42229CE9200971FDF /* LabelsViewModel.swift in Sources */,
+				A781C1AF2226D69E00971FDF /* InboxViewController.swift in Sources */,
+				A7AE3541222F161A00BD4D12 /* Checkbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F707952230419A0013B41A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F7079C2230419A0013B41A /* EmailUtilitiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7F7079F2230419A0013B41A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A725BCD52225D5DF004E3F7F /* KGMail */;
+			targetProxy = A7F7079E2230419A0013B41A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A725BCDD2225D5DF004E3F7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A725BCDE2225D5DF004E3F7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A725BCE22225D5E1004E3F7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A725BCE32225D5E1004E3F7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A725BCE62225D5E1004E3F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A725BCE72225D5E1004E3F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A725BCE92225D5E1004E3F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F752FC21957BF5CB905AD3 /* Pods-KGMail.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KGMail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konradgroup.KGMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A725BCEA2225D5E1004E3F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E314C05BFF18BD6F4DDE9A98 /* Pods-KGMail.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KGMail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konradgroup.KGMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7F707A02230419A0013B41A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KGMailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konradgroup.KGMailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGMail.app/KGMail";
+			};
+			name = Debug;
+		};
+		A7F707A12230419A0013B41A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KGMailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konradgroup.KGMailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGMail.app/KGMail";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A725BCD12225D5DF004E3F7F /* Build configuration list for PBXProject "KGMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A725BCE62225D5E1004E3F7F /* Debug */,
+				A725BCE72225D5E1004E3F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A725BCE82225D5E1004E3F7F /* Build configuration list for PBXNativeTarget "KGMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A725BCE92225D5E1004E3F7F /* Debug */,
+				A725BCEA2225D5E1004E3F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F707A22230419A0013B41A /* Build configuration list for PBXNativeTarget "KGMailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F707A02230419A0013B41A /* Debug */,
+				A7F707A12230419A0013B41A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A725BCCE2225D5DF004E3F7F /* Project object */;
+}
