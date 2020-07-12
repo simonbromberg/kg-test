@@ -92,7 +92,6 @@ class InboxViewController: UIViewController {
 
 		tableView.reloadData()
     }
-
 }
 
 extension InboxViewController: UITableViewDelegate {
