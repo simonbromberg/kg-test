@@ -23,6 +23,25 @@ class EmailUtilities {
         // Note that each list of Email objects is sorted.
         // This function must run in O(n) time, where n is the sum of the sizes of the two lists
 
+		var result = [Email]()
+		let count = min(firstList.count, secondList.count)
+
+		for i in 0..<count {
+			let first = min(firstList[i], secondList[i])
+			let second = max(firstList[i], secondList[i])
+			result.append(first)
+			result.append(second)
+		}
+
+		let rest = firstList.count > count ? firstList[count...] : secondList[count...]
+		result.append(contentsOf: Array(rest))
+
         return firstList + secondList
     }
+}
+
+extension Email: Comparable {
+	static func < (lhs: Email, rhs: Email) -> Bool {
+		return lhs.internalDate < rhs.internalDate
+	}
 }

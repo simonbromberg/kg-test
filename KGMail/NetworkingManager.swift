@@ -23,13 +23,19 @@ class NetworkingManager {
             }
         } else {
 			var allEmails = [[Email]]()
+			let group = DispatchGroup()
+
 			for label in labels {
+				group.enter()
 				internalGetMessages(label: label) { emails in
 					allEmails.append(emails)
+					group.leave()
 				}
 			}
 
-            completion(allEmails)
+			group.notify(queue: .main) {
+				completion(allEmails)
+			}
         }
     }
 
