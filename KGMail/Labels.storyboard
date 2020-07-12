@@ -34,7 +34,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkQ-fS-Cai">
-                                                    <rect key="frame" x="274" y="11.5" width="42" height="21"/>
+                                                    <rect key="frame" x="67" y="11.5" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -42,16 +42,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Ica-WL-CTD" firstAttribute="centerY" secondItem="49X-eD-P1B" secondAttribute="centerY" id="0vo-Md-YM6"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nkQ-fS-Cai" secondAttribute="trailing" id="3OJ-Il-Mjx"/>
                                                 <constraint firstItem="Ica-WL-CTD" firstAttribute="centerY" secondItem="49X-eD-P1B" secondAttribute="centerY" id="7sO-vR-9ep"/>
-                                                <constraint firstItem="nkQ-fS-Cai" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ica-WL-CTD" secondAttribute="trailing" id="GSx-UJ-AWv"/>
+                                                <constraint firstItem="nkQ-fS-Cai" firstAttribute="leading" secondItem="Ica-WL-CTD" secondAttribute="trailing" constant="5" id="GSx-UJ-AWv"/>
                                                 <constraint firstItem="nkQ-fS-Cai" firstAttribute="centerY" secondItem="49X-eD-P1B" secondAttribute="centerY" id="O1j-Mv-dBn"/>
                                                 <constraint firstItem="Ica-WL-CTD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="49X-eD-P1B" secondAttribute="top" constant="11.5" id="i4y-iL-SOX"/>
                                                 <constraint firstItem="Ica-WL-CTD" firstAttribute="leading" secondItem="49X-eD-P1B" secondAttribute="leading" constant="20" symbolic="YES" id="ume-sg-dFw"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="nkQ-fS-Cai" secondAttribute="trailing" constant="59" id="OCn-Pf-ZRo"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="countLabel" destination="nkQ-fS-Cai" id="4bE-Qe-9RT"/>
                                             <outlet property="nameLabel" destination="Ica-WL-CTD" id="NG0-fG-EgI"/>

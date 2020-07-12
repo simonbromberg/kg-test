@@ -7,7 +7,7 @@ class LabelTableViewCell: UITableViewCell {
 
     func setupWithLabelModel(_ labelModel: LabelViewModel) {
         nameLabel?.text = labelModel.name
-        countLabel.text = "\(labelModel.numberOfMessages ?? 0)"
+        countLabel.text = "(\(labelModel.numberOfMessages ?? 0))"
         countLabel.isHidden = labelModel.numberOfMessages == nil
         switch labelModel.type {
         case .user:
