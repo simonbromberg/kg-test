@@ -75,14 +75,17 @@ class EditLabelsViewModel: LabelsViewModel {
 
     func saveLabelsForEmails(completion: @escaping SaveLabelsCompletion) {
         // APPLYING LABELS QUESTION
-        //
-        // This implementation is incomplete.
+        //        
         // Add logic to apply/remove labels to the selected emails
         //      - Each selected label should be added to each selected message
         //      - Any de-selected label should remove the label from each selected message
         //      - View should close once the label changes have been applied
-        let newLabels = [String]()
-        let removeLabels = [String]()
+
+		let previousIDs = previouslyEnabledLabelIDs
+		let selectedLabelIDs = availableLabels.filter { $0.isSelected }.map { $0.id }
+		let newLabels = selectedLabelIDs.filter { !previousIDs.contains($0) }
+        let removeLabels = previousIDs.filter { !selectedLabelIDs.contains($0) }
+
         saveLabelsDataProvider(selectedEmailIDs, newLabels, removeLabels) { success in
             completion(success)
         }
